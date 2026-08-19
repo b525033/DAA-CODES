@@ -1,0 +1,9 @@
+Enter number of elements: 8
+Enter 8 integers:
+2 7 11 15 3 6 9 1
+Enter k: 3
+Enter target T: 18
+
+Sorted set: 1 2 3 6 7 9 11 15
+
+YES: 3 elements add up to 18.

@@ -1,0 +1,25 @@
+Enter number of persons: 6
+Enter entry and exit times:
+Person 1: 1 7
+Person 2: 2 5
+Person 3: 4 8
+Person 4: 3 6
+Person 5: 9 12
+Person 6: 5 10
+
+Sorted events:
+Time 1 : Entry
+Time 2 : Entry
+Time 3 : Entry
+Time 4 : Entry
+Time 5 : Exit
+Time 5 : Entry
+Time 6 : Exit
+Time 7 : Exit
+Time 8 : Exit
+Time 9 : Entry
+Time 10 : Exit
+Time 12 : Exit
+
+Maximum number of people present = 4
+Time when maximum people were simultaneously present = 4
