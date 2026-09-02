@@ -1,0 +1,9 @@
+Enter number of elements: 4
+
+Randomly generated elements:
+5 89 45 95 
+
+Sorted elements using Heap Sort:
+5 45 89 95 
+
+Numbers are stored in file: numbers.txt

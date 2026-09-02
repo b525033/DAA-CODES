@@ -1,0 +1,9 @@
+Enter number of elements: 6
+
+Random elements:
+63 74 3 41 49 10 
+
+Sorted elements:
+3 10 41 49 63 74 
+
+Elements are stored in file: numbers.txt
