@@ -1,0 +1,33 @@
+Enter order of square matrix: 3
+
+Enter Matrix A:
+1 2 3
+2 4 5
+3 5 6
+
+Enter Matrix B:
+1 2 3
+2 4 5
+3 5 6
+(i) Matrix Addition (A + B):
+    2.00     4.00     6.00
+    4.00     8.00    10.00
+    6.00    10.00    12.00
+
+(ii) Matrix Multiplication (A * B):
+   14.00    25.00    31.00
+   25.00    45.00    56.00
+   31.00    56.00    70.00
+
+(iii) A is not a zero matrix.
+(iv) A is a symmetric matrix.
+(v) Determinant of A = -1.00
+
+(vi) Transpose of A (in place):
+    1.00     2.00     3.00
+    2.00     4.00     5.00
+    3.00     5.00     6.00
+
+(vii) Eigenvalues of B:
+11.3448 -0.5157 -0.8291
+

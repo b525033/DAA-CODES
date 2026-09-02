@@ -1,0 +1,35 @@
+Enter number of elements: 8
+Enter permutation of 1 to 8:
+8 3 7 1 6 2 5 4
+
+Initial permutation:
+8 3 7 1 6 2 5 4
+
+Partitioning positions 1 to 8 around pivot value 4
+  Reverse(1, 1), cost = 1
+  Reverse(2, 4), cost = 3
+  Reverse(1, 4), cost = 4
+  Reverse(5, 7), cost = 3
+  Reverse(4, 6), cost = 3
+  Reverse(3, 7), cost = 5
+After partition: 3 1 2 4 8 7 6 5
+
+Partitioning positions 1 to 4 around pivot value 2
+  Reverse(1, 2), cost = 2
+  Reverse(2, 3), cost = 2
+  Reverse(1, 3), cost = 3
+After partition: 1 2 3 4
+
+Partitioning positions 5 to 8 around pivot value 6
+  Reverse(5, 6), cost = 2
+  Reverse(6, 7), cost = 2
+  Reverse(5, 7), cost = 3
+After partition: 5 6 7 8
+
+Final sorted permutation:
+1 2 3 4 5 6 7 8
+
+Number of reversals = 12
+Total reversal cost = 35
+
+Required bound: O(n log^2 n)

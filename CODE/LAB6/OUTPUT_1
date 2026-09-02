@@ -1,0 +1,13 @@
+Enter number of elements: 10
+Enter 10 integers:
+12 5 8 12 3 8 20 5 15 8
+(i) Maximum = 20
+(ii) Largest = 20, Second Largest = 15
+(iii) Mean = 9.60
+(iv) Median = 8.00
+(v) Standard Deviation = 5.17
+(vi) Mode = 8
+(vii) After removing duplicates: 12 5 8 3 20 15
+(viii) Reversed array: 8 15 5 20 8 3 12 8 5 12
+(ix) Enter pivot element: 8
+Partitioned array: 12 15 20 8 8 8 3 5 5 12
