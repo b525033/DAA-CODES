@@ -1,0 +1,13 @@
+Enter number of matrices: 2
+
+Enter dimensions array (size 3):
+Example: For matrices 10x20, 20x30, 30x40
+Enter: 10 20 30 40
+
+
+10 20 33 21
+
+----------------------------------------
+Minimum scalar multiplications = 6600
+Optimal Parenthesization = (A1A2)
+----------------------------------------

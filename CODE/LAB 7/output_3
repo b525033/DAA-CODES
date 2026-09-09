@@ -1,0 +1,41 @@
+Enter number of disks (maximum 20): 8
+
+Minimum number of moves = 33
+Optimal split for 8 disks = 4 disks
+
+Sequence of moves:
+
+ 1. Move disk 1 from Peg A to Peg D
+ 2. Move disk 2 from Peg A to Peg B
+ 3. Move disk 3 from Peg A to Peg C
+ 4. Move disk 2 from Peg B to Peg C
+ 5. Move disk 4 from Peg A to Peg B
+ 6. Move disk 2 from Peg C to Peg A
+ 7. Move disk 3 from Peg C to Peg B
+ 8. Move disk 2 from Peg A to Peg B
+ 9. Move disk 1 from Peg D to Peg B
+10. Move disk 5 from Peg A to Peg C
+11. Move disk 6 from Peg A to Peg D
+12. Move disk 5 from Peg C to Peg D
+13. Move disk 7 from Peg A to Peg C
+14. Move disk 5 from Peg D to Peg A
+15. Move disk 6 from Peg D to Peg C
+16. Move disk 5 from Peg A to Peg C
+17. Move disk 8 from Peg A to Peg D
+18. Move disk 5 from Peg C to Peg D
+19. Move disk 6 from Peg C to Peg A
+20. Move disk 5 from Peg D to Peg A
+21. Move disk 7 from Peg C to Peg D
+22. Move disk 5 from Peg A to Peg C
+23. Move disk 6 from Peg A to Peg D
+24. Move disk 5 from Peg C to Peg D
+25. Move disk 1 from Peg B to Peg A
+26. Move disk 2 from Peg B to Peg D
+27. Move disk 3 from Peg B to Peg C
+28. Move disk 2 from Peg D to Peg C
+29. Move disk 4 from Peg B to Peg D
+30. Move disk 2 from Peg C to Peg B
+31. Move disk 3 from Peg C to Peg D
+32. Move disk 2 from Peg B to Peg D
+33. Move disk 1 from Peg A to Peg D
+Total moves performed = 33

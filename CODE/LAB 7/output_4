@@ -1,0 +1,13 @@
+Enter number of switches (1-15): 3
+Initial State: 111
+Final State:   000
+Minimum moves using DP = 5
+Minimum sequence of states:
+Step  0: 111
+Step  1: 110   (Toggled switch 3)
+Step  2: 010   (Toggled switch 1)
+Step  3: 011   (Toggled switch 3)
+Step  4: 001   (Toggled switch 2)
+Step  5: 000   (Toggled switch 3)
+Minimum moves found using BFS = 5
+Q5. Hitting a moving target

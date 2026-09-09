@@ -1,0 +1,11 @@
+Enter number of scientists: 6
+Enter scientist information:
+Name Birth Year Death Year
+Newton 1643 1727
+Leibniz 1646 1716
+Euler 1707 1783
+Lavoisier 1743 1794
+Faraday 1791 1867
+Darwin 1809 1882
+Best time to be alive: 1707
+Maximum scientists alive: 3
