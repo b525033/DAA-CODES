@@ -1,0 +1,19 @@
+Enter first string: DOG
+Enter second string: SITTING
+
+DP Table:
+
+  0   1   2   3   4   5   6   7 
+  1   1   2   3   4   5   6   7 
+  2   2   2   3   4   5   6   7 
+  3   3   3   3   4   5   6   6 
+
+Minimum Edit Distance = 6
+
+Traceback Operations:
+1. Insert 'S'
+2. Insert 'I'
+3. Insert 'T'
+4. Insert 'T'
+5. Substitute 'D' with 'I'
+6. Substitute 'O' with 'N'

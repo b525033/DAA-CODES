@@ -1,0 +1,17 @@
+Enter rod length: 8
+Enter prices for lengths 1 to 8:
+Price[1] = 1
+Price[2] = 5
+Price[3] = 8
+Price[4] = 9
+Price[5] = 10
+Price[6] = 17
+Price[7] = 17
+Price[8] = 20
+
+Maximum Revenue = 22
+Optimal Pieces = 2 + 6
+
+DP Table:
+Length :    0   1   2   3   4   5   6   7   8
+Revenue:    0   1   5   8  10  13  17  18  22

@@ -1,0 +1,5 @@
+Enter number of coin denominations: 3
+Enter the coin denominations: 2
+12 2 
+Enter target amount: 10
+Minimum number of coins = -1738540299

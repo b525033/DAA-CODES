@@ -1,0 +1,23 @@
+
+1. Analyze a starting value
+2. Analyze an interval [a, b]
+3. Exit
+Enter your choice: 2
+
+Enter interval [a, b]: 1 10
+
+
+Start      Steps           Peak
+1          0               1
+2          1               2
+3          7               16
+4          2               4
+5          5               16
+6          8               16
+7          16              52
+8          3               8
+9          19              52
+10         6               16
+
+Starting value with maximum steps = 9
+Maximum number of steps = 19

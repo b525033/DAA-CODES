@@ -1,0 +1,5 @@
+Enter first sequence: ABCBDA
+Enter second sequence: ADBCBA
+
+Length of LCS = 5
+Longest Common Subsequence = ABCBA

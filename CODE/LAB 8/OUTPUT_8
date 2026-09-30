@@ -1,0 +1,33 @@
+Enter number of keys: 4
+
+Enter probabilities p1 to p4:
+p[1] = 1 2 3 0
+p[2] = p[3] = p[4] = 
+Enter dummy-key probabilities q0 to q4:
+q[0] = 2 4 6 8
+q[1] = q[2] = q[3] = q[4] = 20
+
+====================================
+       OPTIMAL BST RESULTS
+====================================
+Minimum Expected Search Cost = 134.0000
+
+Optimal Root = k4
+
+Structure of Optimal BST:
+k4 is ROOT of ROOT
+k3 is LEFT child of k4
+k2 is LEFT child of k3
+k1 is LEFT child of k2
+
+DP Cost Table:
+e[1][1] = 13.0000
+e[1][2] = 34.0000
+e[1][3] = 68.0000
+e[1][4] = 134.0000
+e[2][2] = 22.0000
+e[2][3] = 53.0000
+e[2][4] = 116.0000
+e[3][3] = 31.0000
+e[3][4] = 88.0000
+e[4][4] = 56.0000
