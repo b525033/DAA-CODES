@@ -1,0 +1,16 @@
+Enter number of symbols: 4
+Enter symbol and frequency:
+A 12
+B 14
+C 16
+D 18
+
+Canonical Huffman Codebook
+--------------------------
+Symbol  Frequency       Length  Code
+A       12              2       00
+B       14              2       01
+C       16              2       10
+D       18              2       11
+
+Minimum expected code length = 2.0000 bits/symbol

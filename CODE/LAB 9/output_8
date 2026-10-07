@@ -1,0 +1,8 @@
+Enter number of meetings: 5
+Enter start and end times:
+Meeting 1: 0 30
+Meeting 2: 5 10
+Meeting 3: 15 20
+Meeting 4: 25 35
+Meeting 5: 30 40
+Minimum number of conference rooms required = 2

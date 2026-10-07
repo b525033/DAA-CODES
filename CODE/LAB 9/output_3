@@ -1,0 +1,11 @@
+Enter target distance D: 100
+Enter initial fuel F: 10
+Enter number of stations: 5
+
+Enter station distance and fuel:
+Station 1: 10 60
+Station 2: 20 30
+Station 3: 30 30
+Station 4: 60 40
+Station 5: 80 20
+Minimum number of refuelling stops: 2

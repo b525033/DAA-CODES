@@ -1,0 +1,223 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int distance;
+    int fuel;
+} Station;
+
+
+
+
+int compareStations(const void *a, const void *b)
+{
+    Station *s1 = (Station *)a;
+    Station *s2 = (Station *)b;
+
+    return s1->distance - s2->distance;
+}
+
+
+
+typedef struct {
+    int *heap;
+    int size;
+    int capacity;
+} MaxHeap;
+
+
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+
+void heapifyUp(MaxHeap *h, int index)
+{
+    while (index > 0) {
+
+        int parent = (index - 1) / 2;
+
+        if (h->heap[parent] >= h->heap[index])
+            break;
+
+        swap(&h->heap[parent], &h->heap[index]);
+
+        index = parent;
+    }
+}
+
+
+void heapifyDown(MaxHeap *h, int index)
+{
+    while (1) {
+
+        int left = 2 * index + 1;
+        int right = 2 * index + 2;
+        int largest = index;
+
+        if (left < h->size &&
+            h->heap[left] > h->heap[largest])
+            largest = left;
+
+        if (right < h->size &&
+            h->heap[right] > h->heap[largest])
+            largest = right;
+
+        if (largest == index)
+            break;
+
+        swap(&h->heap[index], &h->heap[largest]);
+
+        index = largest;
+    }
+}
+
+
+void insert(MaxHeap *h, int fuel)
+{
+    h->heap[h->size] = fuel;
+
+    heapifyUp(h, h->size);
+
+    h->size++;
+}
+
+
+int extractMax(MaxHeap *h)
+{
+    if (h->size == 0)
+        return -1;
+
+    int maximum = h->heap[0];
+
+    h->size--;
+
+    if (h->size > 0) {
+        h->heap[0] = h->heap[h->size];
+        heapifyDown(h, 0);
+    }
+
+    return maximum;
+}
+
+
+
+int minimumStops(Station stations[], int n,
+                 int F, int D)
+{
+    qsort(stations, n, sizeof(Station),
+          compareStations);
+
+    MaxHeap h;
+
+    h.heap = (int *)malloc(n * sizeof(int));
+    h.size = 0;
+    h.capacity = n;
+
+    long long fuel = F;
+    int stops = 0;
+
+    int i = 0;
+
+    while (i < n) {
+
+        
+        if (fuel >= D)
+            break;
+
+        
+        while (i < n &&
+               stations[i].distance <= fuel) {
+
+            insert(&h, stations[i].fuel);
+            i++;
+        }
+
+        
+        if (i < n &&
+            stations[i].distance > fuel) {
+
+            if (h.size == 0) {
+                free(h.heap);
+                return -1;
+            }
+
+            fuel += extractMax(&h);
+            stops++;
+        }
+    }
+    while (fuel < D) {
+
+        if (h.size == 0) {
+            free(h.heap);
+            return -1;
+        }
+
+        fuel += extractMax(&h);
+        stops++;
+    }
+
+    free(h.heap);
+
+    return stops;
+}
+
+
+int main()
+{
+    int n;
+    int F, D;
+
+    printf("Enter target distance D: ");
+    scanf("%d", &D);
+
+    printf("Enter initial fuel F: ");
+    scanf("%d", &F);
+
+    printf("Enter number of stations: ");
+    scanf("%d", &n);
+
+    if (D <= 0 || F < 0 || n < 0) {
+        printf("Invalid input.\n");
+        return 1;
+    }
+
+    Station *stations =
+        (Station *)malloc(n * sizeof(Station));
+
+    printf("\nEnter station distance and fuel:\n");
+
+    for (int i = 0; i < n; i++) {
+
+        printf("Station %d: ", i + 1);
+
+        scanf("%d %d",
+              &stations[i].distance,
+              &stations[i].fuel);
+
+        if (stations[i].distance < 0 ||
+            stations[i].fuel < 0) {
+
+            printf("Invalid station data.\n");
+            free(stations);
+            return 1;
+        }
+    }
+
+    int answer =
+        minimumStops(stations, n, F, D);
+
+    printf("\nMinimum number of refuelling stops: ");
+
+    if (answer == -1)
+        printf("Impossible\n");
+    else
+        printf("%d\n", answer);
+
+    free(stations);
+
+    return 0;
+}

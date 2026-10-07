@@ -1,0 +1,4 @@
+Enter number of weights: 5
+Enter the weights in alphabetic order:
+5 9 12 13 16
+Minimum weighted path length = 131

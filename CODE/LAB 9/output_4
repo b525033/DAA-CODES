@@ -1,0 +1,12 @@
+Enter number of sticks: 4
+Enter stick lengths:
+4
+3
+2
+6
+Connection steps:
+Connect 2 + 3 = 5, cost = 5
+Connect 4 + 5 = 9, cost = 9
+Connect 6 + 9 = 15, cost = 15
+
+Minimum total connection cost = 29

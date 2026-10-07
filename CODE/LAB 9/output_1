@@ -1,0 +1,18 @@
+Enter number of items: 3
+Enter knapsack capacity W: 4
+
+Enter v, w and lambda for each item:
+Item 1: 20 07 2.4
+Item 2: 11 14 0.6
+Item 3: 07 13 04
+
+Optimal scheduling order (increasing lambda):
+Item 2: v = 11.00, w = 14.00, lambda = 0.60
+Item 1: v = 20.00, w = 7.00, lambda = 2.40
+Item 3: v = 7.00, w = 13.00, lambda = 4.00
+
+Optimal fractional choices:
+Item 1: 55.00%
+
+Total weight used = 3.8500
+Maximum total value = 11.0000

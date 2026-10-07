@@ -1,0 +1,11 @@
+After removing redundant strings: 3
+
+Optimal shortest common superstring:
+alexusman
+Optimal length = 9
+
+Greedy maximum-overlap superstring:
+alexusman
+Greedy length = 9
+
+Greedy / Optimal ratio = 1.000
